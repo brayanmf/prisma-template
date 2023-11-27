@@ -1,0 +1,1 @@
+export { default as inmuebleService } from './inmuebles.service';

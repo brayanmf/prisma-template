@@ -1,0 +1,17 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlserver"
+  url      = env("DATABASE_URL_DEV")
+}
+
+model Area {
+  Id     Int     @id @default(autoincrement())
+  Codigo String  @db.VarChar(255)
+  AreaTc Decimal @db.Decimal(10, 3)
+}

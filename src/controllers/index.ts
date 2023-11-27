@@ -1,0 +1,1 @@
+export { default as inmueblesController } from './inmuebles.controller';
